@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WiFi Button</title>
+    <link rel="stylesheet" href="css/relstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo">
+            <div class="menu"></div>
+            <h1>МАРТЫШКА</h1>
+    </div>
+    <div class="main">
+        <div class="menu_box info_text">
+            <ul class="timer_list">
+                <li class="item">
+                    <div class="set_box">
+                        <div class="no_timer_wrapper">
+                            <input type="radio" class="not_chosen" id="choose0" name="choose" checked>
+                            <label for="choose0">- без таймера</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="set_box">
+                        <input type="radio" class="chosen" id="choose1" name="choose" >
+                        <label for="choose1"> </label>
+                        <input type="text" class="name" id="name1" placeholder="имя">
+                        <label for="name1">-</label>
+                        <input type="number" class="timer_min" id="min1" min="0" max="3" step="1" placeholder="минут">
+                        <label for="sec1">:</label>
+                        <input type="number" class="timer_sec" id="sec1" min="0" max="59" step="1" placeholder="секунд">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="set_box">
+                        <input type="radio" class="chosen" id="choose2" name="choose" >
+                        <label for="choose2"> </label>
+                        <input type="text" class="name" id="name2" placeholder="имя">
+                        <label for="name3">-</label>
+                        <input type="number" class="timer_min" id="min2" min="0" max="3" step="1" placeholder="минут">
+                        <label for="sec2">:</label>
+                        <input type="number" class="timer_sec" id="sec2" min="0" max="59" step="1" placeholder="секунд">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="set_box">
+                        <input type="radio" class="chosen" id="choose3" name="choose" >
+                        <label for="choose3"> </label>
+                        <input type="text" class="name" id="name3" placeholder="имя">
+                        <label for="name3">-</label>
+                        <input type="number" class="timer_min" id="min3" min="0" max="3" step="1" placeholder="минут">
+                        <label for="sec2">:</label>
+                        <input type="number" class="timer_sec" id="sec3" min="0" max="59" step="1" placeholder="секунд">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="timer_box">
+                <div class="chosen_timer info_text">нет таймера</div>
+                <div class="time_left info_text">--:--</div>
+            </div>
+            <div class="monkey"></div>
+            <div class="state info_text">СТАТУС: <span id="state">ПОДКЛЮЧИТЕ</span></div>
+            <div class="button_wrapper">
+                <div class="button button_off">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
